@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es-PY">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contacto — VitroCampos</title>
+<meta name="description" content="Hablá con VitroCampos: teléfono, WhatsApp, Instagram y formulario de presupuesto.">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+<link rel="icon" href="img/favicon.ico">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="logo"><img src="img/logo-header.png" alt="VitroCampos" class="logo-img"></a>
+    <nav class="main-nav">
+      <a href="index.html">Inicio</a>
+      <a href="servicos.html">Servicios</a>
+      <a href="sobre.html">Nosotros</a>
+      <a href="contato.html" class="active">Contacto</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="contato.html" class="btn btn-ghost">Contacto</a>
+      <a href="https://wa.me/595993649798" class="btn btn-copper" target="_blank" rel="noopener">Solicitar presupuesto</a>
+      <span class="flag-icon" title="Paraguay" aria-label="Paraguay">
+        <svg viewBox="0 0 900 600" xmlns="http://www.w3.org/2000/svg" role="img">
+          <rect width="900" height="200" fill="#D52B1E"/>
+          <rect y="200" width="900" height="200" fill="#FFFFFF"/>
+          <rect y="400" width="900" height="200" fill="#0038A8"/>
+          <circle cx="450" cy="300" r="60" fill="#FFFFFF" stroke="#0038A8" stroke-width="4"/>
+          <circle cx="450" cy="300" r="34" fill="#FCD116"/>
+        </svg>
+      </span>
+    </div>
+    <button class="nav-toggle" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-nav">
+    <a href="index.html">Inicio</a>
+    <a href="servicos.html">Servicios</a>
+    <a href="sobre.html">Nosotros</a>
+    <a href="contato.html">Contacto</a>
+    <a href="https://wa.me/595993649798" target="_blank" rel="noopener">Solicitar presupuesto →</a>
+  </div>
+</header>
+
+<main>
+
+  <section class="page-hero">
+    <div class="wrap">
+      <span class="eyebrow">Contacto</span>
+      <h1>Vamos a medir tu espacio.</h1>
+      <p class="lead">Completá el formulario con el servicio que necesitás o escribinos directo por WhatsApp — respondemos el mismo día.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap contact-grid">
+
+      <form class="reveal" onsubmit="return false;">
+        <div class="field">
+          <label for="nome">Nombre</label>
+          <input type="text" id="nome" name="nome" placeholder="Tu nombre completo" required>
+        </div>
+        <div class="field">
+          <label for="telefone">Teléfono / WhatsApp</label>
+          <input type="tel" id="telefone" name="telefone" placeholder="+595 9__ ______" required>
+        </div>
+        <div class="field">
+          <label for="servico">Servicio de interés</label>
+          <select id="servico" name="servico">
+            <option>Ventanas corredizas</option>
+            <option>Puertas y portones</option>
+            <option>Cerramientos y mamparas</option>
+            <option>Vidrios a medida</option>
+            <option>Mosquiteros</option>
+            <option>Reparación / mantenimiento</option>
+            <option>Otro</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="mensagem">¿Qué necesitás?</label>
+          <textarea id="mensagem" name="mensagem" placeholder="Describí el espacio, medidas aproximadas y plazo deseado"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar pedido de presupuesto</button>
+      </form>
+
+      <div class="reveal">
+        <div class="info-row">
+          <span class="k">Teléfono</span>
+          <span class="v"><a href="tel:+595993649798">+595 993 649798</a></span>
+        </div>
+        <div class="info-row">
+          <span class="k">WhatsApp</span>
+          <span class="v"><a href="https://wa.me/595993649798" target="_blank" rel="noopener">Escribir por WhatsApp</a></span>
+        </div>
+        <div class="info-row">
+          <span class="k">Instagram</span>
+          <span class="v"><a href="https://instagram.com/vitrocampos_vidreria" target="_blank" rel="noopener">@vitrocampos_vidreria</a></span>
+        </div>
+        <div class="info-row">
+          <span class="k">Dirección</span>
+          <span class="v">1ª calle de la República del Paraguay<br>saliendo de la Av. San Blas, km 8 Acaray<br>Ciudad del Este, Paraguay</span>
+        </div>
+        <div class="info-row">
+          <span class="k">Horario</span>
+          <span class="v">Lunes a sábado<br>(confirmar horario exacto)</span>
+        </div>
+
+        <div class="map-embed">
+          <iframe
+            src="https://www.openstreetmap.org/export/embed.html?bbox=-54.7050%2C-25.4900%2C-54.6500%2C-25.4550&marker=-25.4719%2C-54.6780&layer=mapnik"
+            loading="lazy" title="Ubicación VitroCampos"></iframe>
+          <div class="map-caption">
+            <span>📍 Primera calle de la República del Paraguay, saliendo de la Av. San Blas, km 8 Acaray — Ciudad del Este</span>
+            <a href="https://www.google.com/maps/dir/?api=1&destination=-25.4719,-54.6780" target="_blank" rel="noopener">Cómo llegar →</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <h4>VitroCampos</h4>
+      <p>Aluminio y vidrios templados, con instalación, reparación y mantenimiento en Ciudad del Este y región.</p>
+    </div>
+    <div>
+      <h4>Navegación</h4>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="servicos.html">Servicios</a></li>
+        <li><a href="sobre.html">Nosotros</a></li>
+        <li><a href="contato.html">Contacto</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contacto</h4>
+      <ul>
+        <li><a href="tel:+595993649798">+595 993 649798</a></li>
+        <li><a href="https://instagram.com/vitrocampos_vidreria" target="_blank" rel="noopener">@vitrocampos_vidreria</a></li>
+        <li>Lunes a sábado</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Ubicación</h4>
+      <p>Km 8 Acaray, Av. San Blas<br>Ciudad del Este, PY</p>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <span>© <span id="year"></span> VitroCampos</span>
+    <span>sitio actualizado — confirmar horarios y dirección exacta</span>
+  </div>
+</footer>
+
+<a href="https://wa.me/595993649798" class="whatsapp-float" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 32 32" fill="#fff" xmlns="http://www.w3.org/2000/svg"><path d="M16.001 3C9.373 3 4 8.373 4 15c0 2.34.687 4.523 1.875 6.36L4 29l7.86-1.826A11.94 11.94 0 0 0 16.001 27C22.628 27 28 21.627 28 15S22.628 3 16.001 3zm6.607 16.94c-.276.777-1.61 1.487-2.222 1.58-.577.087-1.31.124-2.116-.132-.487-.153-1.114-.36-1.918-.706-3.377-1.457-5.583-4.85-5.752-5.076-.169-.226-1.376-1.83-1.376-3.492 0-1.663.874-2.48 1.184-2.82.31-.34.675-.425.9-.425.225 0 .45.002.646.012.207.01.486-.079.76.58.276.66.938 2.278 1.02 2.443.084.164.14.357.028.583-.113.226-.169.366-.336.564-.169.198-.354.443-.507.596-.169.169-.345.353-.148.692.197.34.876 1.446 1.882 2.342 1.293 1.153 2.384 1.51 2.724 1.679.34.169.539.141.738-.085.197-.226.845-.986 1.07-1.325.226-.34.451-.283.76-.17.31.113 1.972.93 2.31 1.1.34.169.564.254.648.395.084.14.084.813-.192 1.59z"/></svg>
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
