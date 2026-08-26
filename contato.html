@@ -61,7 +61,7 @@
   <section>
     <div class="wrap contact-grid">
 
-      <form class="reveal" onsubmit="return false;">
+      <form class="reveal" id="form-presupuesto" onsubmit="return enviarPorWhatsApp(event);">
         <div class="field">
           <label for="nome">Nombre</label>
           <input type="text" id="nome" name="nome" placeholder="Tu nombre completo" required>
@@ -87,6 +87,7 @@
           <textarea id="mensagem" name="mensagem" placeholder="Describí el espacio, medidas aproximadas y plazo deseado"></textarea>
         </div>
         <button type="submit" class="btn btn-primary">Enviar pedido de presupuesto</button>
+        <p style="font-family: var(--mono); font-size: 11px; color: var(--ink-soft); margin-top: 10px;">Se abre WhatsApp con tu mensaje ya escrito, listo para enviar.</p>
       </form>
 
       <div class="reveal">

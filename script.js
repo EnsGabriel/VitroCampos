@@ -25,3 +25,31 @@ if ('IntersectionObserver' in window && revealEls.length) {
 // ---------- Ano automático no rodapé ----------
 const yearEl = document.getElementById('year');
 if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+// ---------- Formulário de contacto -> WhatsApp ----------
+function enviarPorWhatsApp(event) {
+  event.preventDefault();
+
+  const nome = document.getElementById('nome')?.value.trim() || '';
+  const telefone = document.getElementById('telefone')?.value.trim() || '';
+  const servicio = document.getElementById('servico')?.value || '';
+  const mensaje = document.getElementById('mensagem')?.value.trim() || '';
+
+  if (!nome || !telefone) {
+    alert('Por favor completá al menos el nombre y el teléfono antes de enviar.');
+    return false;
+  }
+
+  const partes = [
+    `Hola VitroCampos! Soy ${nome}.`,
+    `Teléfono: ${telefone}`,
+    `Servicio de interés: ${servicio}`,
+  ];
+  if (mensaje) partes.push(`Detalle: ${mensaje}`);
+
+  const texto = encodeURIComponent(partes.join('\n'));
+  const numero = '595993649798';
+
+  window.open(`https://wa.me/${numero}?text=${texto}`, '_blank');
+  return false;
+}
